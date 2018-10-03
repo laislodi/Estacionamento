@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6DFB5CCC-3D19-4497-DECE-C452CC4232DE" name="cliente">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:32:26 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cliente" id="04BBDAFA-CC58-7853-CB4D-DC71199333FD">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:33:49 UTC</createdTime>
+<commentInRDBMS>Identificador do registro</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome" id="B9957EC4-5ABF-FD6A-1486-138917F0F2B1">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:33:49 UTC</createdTime>
+<commentInRDBMS>Nome do cliente</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="documento" id="C4F44500-F161-3489-2919-07C98FC481A4">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:54:30 UTC</createdTime>
+<commentInRDBMS>CPF do cliente sem máscara</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefone" id="BC35DECE-2FA1-B608-8575-449A3439700A">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:41:56 UTC</createdTime>
+<commentInRDBMS>Telefone do cliente sem máscara</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9FDD3DBA-CF65-A27B-9CAE-FD8F0B529A7A" name="cliente_PK">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:33:49 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04BBDAFA-CC58-7853-CB4D-DC71199333FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="86E6E131-80A8-12A2-81B7-CFC28E59603B" name="cliente_documento_UN">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 22:02:29 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4F44500-F161-3489-2919-07C98FC481A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

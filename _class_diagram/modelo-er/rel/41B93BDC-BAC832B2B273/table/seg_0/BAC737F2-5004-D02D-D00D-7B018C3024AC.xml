@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BAC737F2-5004-D02D-D00D-7B018C3024AC" name="entradas">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:44:53 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_entradas" id="A6BAB67D-A373-8937-5465-81ED97774E39">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:46:02 UTC</createdTime>
+<commentInRDBMS>Identificador do registro</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="horario_entrada" id="BEB5736B-8BA9-1A8A-6A83-D16E6F71A8A7">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:46:42 UTC</createdTime>
+<commentInRDBMS>Dia e hora em que um cliente registrou uma entrada com um veículo</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="horario_saida" id="CBBC91C3-29A4-9B84-DDE2-DFEB1F3BF97B">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:47:06 UTC</createdTime>
+<commentInRDBMS>Dia e hora em que um cliente registrou uma saída com um veículo</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_pago" id="39B5C833-A7E8-6454-476E-30E81B01898C">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:53:06 UTC</createdTime>
+<commentInRDBMS>Valor pago pelo cliente</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_barras" id="3F571EE7-A8F3-DCA4-622E-78397D79A10E">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 21:33:23 UTC</createdTime>
+<commentInRDBMS>Número do código de barras gerado na entrada do</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_cliente" id="B81FE5B3-AEF2-E4DC-A8A3-2FDA1FB4974B">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:47:37 UTC</createdTime>
+<commentInRDBMS>Chave estrangeira da tabela cliente</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C20AFC3A-036D-E684-0775-32E0A729BAFE" referredColumn="04BBDAFA-CC58-7853-CB4D-DC71199333FD"/>
+</associations>
+</Column>
+<Column name="id_veiculo" id="44545D27-7B83-ACB1-3365-5E61B974AD95">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:47:45 UTC</createdTime>
+<commentInRDBMS>chave estrangeira da tabela veículo</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C00AD085-F936-FE69-3A0A-C8222DE6C78E" referredColumn="C0312773-5098-FB33-EE20-D3BA0902DA83"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7AA0178B-2BE0-0C24-67FD-DA70D8D262F7" name="entradas_PK">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 21:54:27 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6BAB67D-A373-8937-5465-81ED97774E39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D71A038A-9F14-5C1A-C2E6-D2716CAAA176" name="entradas_UN">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 22:06:43 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEB5736B-8BA9-1A8A-6A83-D16E6F71A8A7"/>
+<colUsage columnID="CBBC91C3-29A4-9B84-DDE2-DFEB1F3BF97B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2816803-8681-9A70-40A5-D03D59A37D26" name="entradas_cliente_FK">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:47:37 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B81FE5B3-AEF2-E4DC-A8A3-2FDA1FB4974B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8D27796-AFE5-65DB-84CB-12B0CAA7FFBE" name="entradas_veiculo_FK">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:47:45 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44545D27-7B83-ACB1-3365-5E61B974AD95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

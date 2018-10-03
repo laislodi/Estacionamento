@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="069809D4-1904-C3F7-C5DA-49EA8C560EBC" name="cor">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:38:49 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cor" id="4FE0EAD1-6113-007F-8D7D-A05CD910E976">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:39:11 UTC</createdTime>
+<commentInRDBMS>Identificador do registro</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="CC394092-E56B-E26B-9E38-F2414037442F">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:39:11 UTC</createdTime>
+<commentInRDBMS>Descrição da cor do veículo</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E8037049-A934-FDAD-B5A8-A5A99165FA34" name="cor_PK">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:39:11 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FE0EAD1-6113-007F-8D7D-A05CD910E976"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85AFC4CC-BAD6-D6FD-D369-96804A58F261" name="cor_descricao_UN">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 22:04:31 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC394092-E56B-E26B-9E38-F2414037442F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

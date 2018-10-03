@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C00AD085-F936-FE69-3A0A-C8222DE6C78E" containerWithKeyObject="BAC737F2-5004-D02D-D00D-7B018C3024AC" localFKIndex="E8D27796-AFE5-65DB-84CB-12B0CAA7FFBE" name="entradas_veiculo_FK">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:47:45 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<referredTableLongName>veiculo</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>828AF8E4-9E07-382C-AB2D-925624C5A6A3</referredTableID>
+<keyObject>4E8DFE43-B8E7-FA2E-0EE6-0BDFA63CAB2C</keyObject>
+<referredKeyID>4E8DFE43-B8E7-FA2E-0EE6-0BDFA63CAB2C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_veiculo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

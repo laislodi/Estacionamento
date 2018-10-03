@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="828AF8E4-9E07-382C-AB2D-925624C5A6A3" name="veiculo">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:33:57 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_veiculo" id="C0312773-5098-FB33-EE20-D3BA0902DA83">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:36:13 UTC</createdTime>
+<commentInRDBMS>Identificador do registro</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="placa" id="3415D40A-E244-F086-896A-1AAC8479213B">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 22:03:55 UTC</createdTime>
+<commentInRDBMS>Placa do veículo com letras e números</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="marca" id="0B1E4044-31CF-6F3F-F988-EFA319667FFB">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:36:13 UTC</createdTime>
+<commentInRDBMS>Marca do veículo</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="porte" id="4C56A025-607D-FC53-2834-F31C101C4BDA">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:36:13 UTC</createdTime>
+<commentInRDBMS>P - pequeno, M - medio, G - grande</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cliente_id" id="15AA4810-F9DF-060C-0D30-72AD943E7779">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:37:05 UTC</createdTime>
+<commentInRDBMS>Chave estrangeira da tabela cliente</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C67DD20D-E235-EEE0-852E-98A4D79819A4" referredColumn="04BBDAFA-CC58-7853-CB4D-DC71199333FD"/>
+</associations>
+</Column>
+<Column name="cor_id" id="4F9B9F0E-8FA5-54B1-EDE2-4EA8C4FE2CE5">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:39:34 UTC</createdTime>
+<commentInRDBMS>Chave estrangeira da tabela cor</commentInRDBMS>
+<ownerDesignName>modelo-er</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36B6C95E-B692-1A59-4282-20ADE6235D48" referredColumn="4FE0EAD1-6113-007F-8D7D-A05CD910E976"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E8DFE43-B8E7-FA2E-0EE6-0BDFA63CAB2C" name="veiculo_PK">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:36:52 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0312773-5098-FB33-EE20-D3BA0902DA83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD7971F0-079B-459E-369A-4498E0EF5D82" name="veiculo_placa_UN">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 22:04:14 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3415D40A-E244-F086-896A-1AAC8479213B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0430241A-E4EC-4080-2759-FACFC6F6C2B1" name="veiculo_cliente_FK">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:37:05 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15AA4810-F9DF-060C-0D30-72AD943E7779"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA8FDC6F-8485-5EF1-FF05-E7A21BA9394F" name="veiculo_cor_FK">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:39:34 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F9B9F0E-8FA5-54B1-EDE2-4EA8C4FE2CE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

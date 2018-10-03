@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="36B6C95E-B692-1A59-4282-20ADE6235D48" containerWithKeyObject="828AF8E4-9E07-382C-AB2D-925624C5A6A3" localFKIndex="BA8FDC6F-8485-5EF1-FF05-E7A21BA9394F" name="veiculo_cor_FK">
+<createdBy>Gabriel</createdBy>
+<createdTime>2018-09-16 20:39:34 UTC</createdTime>
+<ownerDesignName>modelo-er</ownerDesignName>
+<referredTableLongName>cor</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>069809D4-1904-C3F7-C5DA-49EA8C560EBC</referredTableID>
+<keyObject>E8037049-A934-FDAD-B5A8-A5A99165FA34</keyObject>
+<referredKeyID>E8037049-A934-FDAD-B5A8-A5A99165FA34</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_cor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
